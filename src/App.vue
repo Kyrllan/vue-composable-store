@@ -28,7 +28,7 @@ const menuList = [
     <q-header>
       <q-toolbar>
         <q-btn flat @click="drawer = !drawer" round dense icon="menu" />
-        <q-toolbar-title>Quasar</q-toolbar-title>
+        <q-toolbar-title>Vue Composable Store</q-toolbar-title>
       </q-toolbar>
     </q-header>
 
