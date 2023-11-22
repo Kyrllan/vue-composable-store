@@ -1,23 +1,27 @@
-import {reactive} from 'vue'
+import { reactive } from "vue";
 
 const globalStore = reactive({
   value: 0,
   increment: () => {
-    localStore.value++
+    globalStore.value++
+  },
+  decrement: () => {
+    globalStore.value--
   }
-})
+});
 
-const useStateStore = () => {
+
+export const useStateStore = () => {
+
   const localStore = reactive({
     value: 0,
     increment: () => {
       localStore.value++
+    },
+    decrement: () => {
+      localStore.value--
     }
-  })
+  });
 
-  return {
-    globalStore,
-    localStore
-  }
-
-}
+  return { globalStore, localStore };
+};
