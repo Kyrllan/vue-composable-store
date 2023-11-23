@@ -1,4 +1,4 @@
-DEMO: kyrllan.github.io/vue-composable-store/
+DEMO: https://kyrllan.github.io/vue-composable-store/
 
 
 # simple Vue 3 + Vue Router + Quasar (Vite) Project.
